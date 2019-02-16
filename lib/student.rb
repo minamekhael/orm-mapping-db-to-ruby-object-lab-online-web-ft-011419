@@ -16,7 +16,7 @@ class Student
     DB[:conn].execute(sql).collect do |row|
       self.new_from_db(row)
     end
-  end	  end
+  end
 
   def self.find_by_name(name)
     # find the student in the database given a name
